@@ -1,0 +1,48 @@
+html, #root {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+*{
+  cursor: default;
+}
+.wrapper{
+  text-align: left;
+  position: relative;
+  min-height: 100%;
+}
+.wrapper img{
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(50% 50%);
+}
+.table_wrapper .header{
+  font-weight: bold;
+  padding: 5px 4px;
+  text-align: left;
+}
+.tr_wrapper{
+  display: table-row;
+  background-color: transparent;
+}
+.tr_wrapper:hover{
+  background-color: lightgoldenrodyellow;
+}
+.tr_wrapper > div{
+  display: table-cell;
+  text-align: right;
+  padding: 1px 4px;
+  border: 1px solid lightgrey;
+}
+.inner_table > div {
+  width: 100%;
+  display: flex;
+}
+.inner_table > div:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+.inner_table > div > div {
+  flex: 1 1 0;
+}
